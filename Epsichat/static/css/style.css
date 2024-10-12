@@ -1,17 +1,26 @@
-.scrollable {
-    height: 500px; /* Ajustez la hauteur selon vos besoins */
-    overflow-x: auto; /* Ajoute une barre de défilement verticale si le contenu dépasse */
-    color : red;
-}
-.scrollable::-webkit-scrollbar {
-    width: 100%; /* Largeur de la barre de défilement */
-}
+.scrollable-content {
+            height: 300px; /* Hauteur fixe pour activer le défilement si le contenu dépasse */
+            overflow-y: auto; /* Active la barre de défilement verticale */
+        }
 
-.scrollable::-webkit-scrollbar-thumb {
-    background-color: #888; /* Couleur de la barre de défilement */
-    border-radius: 10px; /* Coins arrondis */
-}
+        /* Style personnalisé pour la barre de défilement */
+        .scrollable-content::-webkit-scrollbar {
+            width: 8px; /* Largeur de la barre de défilement */
+        }
 
-.scrollable::-webkit-scrollbar-thumb:hover {
-    background-color: #555; /* Couleur lors du survol */
+        .scrollable-content::-webkit-scrollbar-track {
+            background: #f1f1f1; /* Couleur de la piste de la barre de défilement */
+        }
+
+        .scrollable-content::-webkit-scrollbar-thumb {
+            background: #888; /* Couleur du pouce */
+            border-radius: 4px; /* Arrondir les bords du pouce */
+        }
+
+        .scrollable-content::-webkit-scrollbar-thumb:hover {
+            background: #555; /* Couleur du pouce au survol */
+        }
+.workspace{
+    border-radius : 10px;
+    height: 629px;
 }
