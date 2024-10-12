@@ -1,10 +1,60 @@
+{% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
+    <meta >
+    <meta charset="UTF-8" http-equiv="X-UA-Compatible" content = "IE=edge">
+    <meta name="viewport" content =" width = device-width, initial = scale = 1.0">
+    <link rel="stylesheet" href="{% static 'css\bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css\style.css' %}">
+    <script src="{% static 'javascript\bootstrap.bundle.js' %}" defer></script>
+    <script src="{% static 'javascript\toast.js' %}" defer></script>
     <title>chatgpt</title>
 </head>
 <body>
-    <h1> bonjour</h1>
+<header class="navbar navbar-expand-md navbar-light bg-light px-3">
+    <a href="#" class="nav-brand "><img src="{% static 'images/logo.png' %}" alt="logo" width="50" height="50"></a>
+    <span class="navbar-text px-1">le plaisir d'imaginer</span>
+    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-content">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <nav class="collapse navbar-collapse" id="navbar-content">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a href="#" class="nav-link">Accueil</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Chatgpt</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">CV Generator</a></li>
+            <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">A propos</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#" class="dropdown-item">item1</a></li>
+                    <li><a href="#" class="dropdown-item">item2</a></li>
+                    <li><a href="#" class="dropdown-item">item3</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link">conctact</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="toast position-absolute end-0 ">
+    <div class="toast-header bg-primary  bg-opacity-75 text-white ">
+        <strong class="me-auto">Attention</strong>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+        Problème de connexion !
+    </div>
+</div>
+<div class="row" style="height: 100vh;">
+    <div class="col-4 bg-dark text-white px-2" style="height: auto;max-height:100vp ;margin-left:10px; ; overflow-y: auto;">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi at, dicta distinctio ex facilis hic, magni nam nihil non officia, quidem suscipit voluptatem voluptates. Adipisci alias architecto blanditiis corporis debitis dolore dolorem, doloribus dolorum error est eveniet, fuga fugiat harum modi nam nulla odit omnis perspiciatis possimus quidem quod quos sed tenetur ut voluptate voluptatem voluptatum! Dolores ducimus ex, inventore odit praesentium quos reiciendis. Cupiditate id optio sit. Accusamus adipisci aliquid aperiam asperiores autem beatae commodi, cumque cupiditate doloremque eaque eligendi est ex facilis harum hic impedit iste libero maxime necessitatibus nisi omnis possimus, provident quis rem repellat repellendus sequi ut velit voluptatem voluptates. Amet asperiores aut culpa cupiditate distinctio doloremque, enim fugit id in incidunt itaque magnam, maiores natus neque nostrum, nulla obcaecati odio porro quasi quis rem repudiandae voluptates? Accusamus esse et fuga necessitatibus qui repudiandae velit voluptate. mperferendis. Adipisci assumenda, blanditiis culpa cumque cupiditate deleniti distinctio dolore dolorum eius enim eos est excepturi illum in ipsum iusto nam necessitatibus pariatur quos ratione repudiandae, suscipit totam!
+        <br><br>
+        <!-- Ajoutez plus de contenu ici pour tester le défilement -->
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet animi aperiam distinctio dolore, ducimus ea, facilis harum id illum impedit in ipsam iste itaque iure laboriosam, minus molestias nemo perferendis quibusdam quidem quos, ratione repudiandae rerum, sit tempora. Assumenda at autem blanditiis dolore dolorum ea est et eum, facere harum impedit in incidunt, magni minima mollitia necessitatibus non numquam officia perferendis, quam rem repudiandae rerum, sapiente sequi.
+    </div>
+    <div class="col-7 bg-primary" style="height: 100vh;">
+        la bare de lefilement pour croller sur le texte lorem ne s'affiche pas
+    </div>
+</div>
+
+
 </body>
 </html>
