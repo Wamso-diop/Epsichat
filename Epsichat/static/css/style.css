@@ -1,3 +1,6 @@
+body {
+    font-family: Arial, sans-serif;
+}
 .scrollable-content {
             height: 300px; /* Hauteur fixe pour activer le défilement si le contenu dépasse */
             overflow-y: auto; /* Active la barre de défilement verticale */
@@ -24,3 +27,94 @@
     border-radius : 10px;
     height: 629px;
 }
+.droit{
+    text-align: center;
+}
+.sidebar {
+    height: 100vh; /* Occuper toute la hauteur de l'écran */
+    background-color: #343a40; /* Couleur de fond */
+    color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    }
+.content {
+    padding: 1rem;
+}
+
+        .typing-container {
+            font-size: 1.5rem;
+            border-right: 2px solid;
+            overflow-wrap: break-word;
+            max-width: 100%;
+            animation: blink-caret 5s step-end infinite;
+        }
+
+        @keyframes blink-caret {
+            50% { border-color: transparent; }
+        }
+        #chat-container {
+            width: 100%;
+            height: 500px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: #f8f9fa;
+        }
+
+        /* Zone des messages */
+        #message-box {
+            flex-grow: 1;
+            padding: 15px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Style des messages */
+        .message {
+            margin-bottom: 15px;
+            max-width: 80%;
+            padding: 10px;
+            border-radius: 8px;
+            position: relative;
+        }
+
+        /* Style des messages envoyés par l'utilisateur */
+        .user-message {
+            align-self: flex-end;
+            background-color: #007bff;
+            color: white;
+        }
+
+        /* Style des messages de l'IA */
+        .ai-message {
+            align-self: flex-start;
+            background-color: #e9ecef;
+            color: black;
+        }
+
+        /* Champ de saisie du message */
+        #input-container {
+            padding: 10px;
+            border-top: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* Zone de texte et bouton */
+        #message-input {
+            width: 85%;
+            border-radius: 8px;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        #send-button {
+            width: 12%;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+        }
