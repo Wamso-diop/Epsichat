@@ -2,18 +2,20 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta >
     <meta charset="UTF-8" http-equiv="X-UA-Compatible" content = "IE=edge">
     <meta name="viewport" content =" width = device-width, initial = scale = 1.0">
     <link rel="stylesheet" href="{% static 'css\bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'css\style.css' %}">
     <script src="{% static 'javascript\bootstrap.bundle.js' %}" defer></script>
     <script src="{% static 'javascript\toast.js' %}" defer></script>
-    <title>chatgpt</title>
+    <script src="{% static 'javascript\script.js' %}" defer></script>
+    <title>Epsichat</title>
 </head>
 <body style="height:100%;">
 <header class="navbar navbar-expand-md navbar-light bg-primary px-3" style="border-radius:8px;">
-    <a href="#" class="nav-brand "><img src="{% static 'images/logo1.png' %}" alt="logo" width="80" height="50"></a>
+    <a href="#" class="nav-brand ">
+        <img src="{% static 'images/logo1.png' %}" alt="logo" width="80" height="50">
+    </a>
     <span class="navbar-text px-0 py-4" >le plaisir d'imaginer</span>
     <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-content">
         <span class="navbar-toggler-icon"></span>
@@ -43,7 +45,7 @@
         Problème de connexion !
     </div>
 </div>
-<div class="container-fluid" style="height:600px;">
+<div class="container-fluid" style="height:100hv;">
         <div class="row">
             <!-- Partie de 20% de largeur -->
             <div class="col-4 border workspace scrollable-content border p-0" style="background-color: #FFFFFF;">
@@ -71,29 +73,30 @@
 
                                     <!-- Contenu principal -->
                                     <main class="col-md-8 col-lg-8 content" style=" background-color:#f9f9f9;">
-                                        <h1>Bienvenue</h1>
-                                        <p>Ceci est un site d'inteligence artifielle developper par Epsilon.</p>
+                                        <h1>Historique</h1>
+                                        <h5>Du Lorem ipsum dolor sit amet, consectetur.</h5>
                                     </main>
                                 </div>
                             </div>
                         </div>
             </div>
             <!-- Partie de 60% de largeur -->
-            <div class="col-8 border workspace scrollable-content border" style="background-color: #FFFFFF; height:650px;">
-                <div class="typing-container " id="typing-container">
-                    <span style="text-align:center;"><a href="#" class="nav-brand px-50"><img src="{% static 'images/logo1.png' %}" alt="logo" width="200" height="200"></a></span>
+            <div class="col-8 border workspace scrollable-content border" style="background-color: #FFFFFF; height:100hv;">
+                <div class="typing-container logo" id="typing-container" style="text-align:center">
+                    <span style="text-align:center;"><a href="#" class="nav-brand "><img src="{% static 'images/logo1.png' %}" alt="logo" width="150" height="100"></a></span>
                     <span style="text-align:center;">Epsichat</span>
+
                 </div>
                 <div class="container">
                       <div class="row">
                             <div class="col">
 
                             </div>
-                            <div class="col " style="border-radius:15px; background-color:#f4f4f4;">
+                            <div class="col " style="border-radius:15px; background-color:#f4f4f4; padding: 15px">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias consectetur deleniti dolores eius eligendi eos incidunt inventore ipsam natus nulla odio officiis possimus praesentium, rem rerum similique totam veniam voluptas.
                             </div>
                       </div>
-                      <div class="row">
+                      <div class="row" style="border-radius:15px; padding: 15px">
                             <div class="col">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores atque, consequatur distinctio eaque enim est excepturi iusto maiores, molestiae neque optio porro quaerat quibusdam quos rerum saepe sunt unde voluptatem.
                             </div>
@@ -101,7 +104,14 @@
 
                             </div>
                       </div>
-                    </div>
+
+                </div>
+                <div class="row " style="border-radius: 15px;border:12px; margin: 10px; text-align: center; height: 50px;">
+                    <span class="col">
+                        <input type="text"  id="question" style="padding-left:10px; background-color : #f4f4f4; width:90%; border-radius: 15px; height:50px; border:none" placeholder="posez votre question">
+                        <button class="btn btn-primary" style=" border-radius: 15px; " onclick="question()">Envoyer</button>
+                    </span>
+                </div>
             </div>
         </div>
     </div>

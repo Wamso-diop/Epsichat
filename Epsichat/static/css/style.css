@@ -1,6 +1,9 @@
 body {
     font-family: Arial, sans-serif;
 }
+a{
+    background-color: white;
+}
 .scrollable-content {
             height: 300px; /* Hauteur fixe pour activer le défilement si le contenu dépasse */
             overflow-y: auto; /* Active la barre de défilement verticale */
@@ -117,4 +120,7 @@ body {
             color: white;
             border: none;
             border-radius: 8px;
+        }
+        .logo{
+                position:center;
         }
