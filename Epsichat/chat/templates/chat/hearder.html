@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" http-equiv="X-UA-Compatible" content = "IE=edge">
+    <meta name="viewport" content =" width = device-width, initial = scale = 1.0">
+    <link rel="stylesheet" href="{% static 'css\bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css\style.css' %}">
+    <script src="{% static 'javascript\bootstrap.bundle.js' %}" defer></script>
+    <script src="{% static 'javascript\toast.js' %}" defer></script>
+    <script src="{% static 'javascript\script.js' %}" defer></script>
+    <title>Epsichat</title>
+</head>
+<body style="height:100%;">
+<header class="navbar navbar-expand-md navbar-light bg-primary px-3" style="border-radius:8px;">
+    <a href="#" class="nav-brand ">
+        <img src="{% static 'images/logo1.png' %}" alt="logo" width="80" height="50">
+    </a>
+    <span class="navbar-text px-0 py-4" >le plaisir d'imaginer</span>
+    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-content">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <nav class="collapse navbar-collapse" id="navbar-content">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a href="#" class="nav-link">Accueil</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Chatgpt</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">CV Generator</a></li>
+            <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">A propos</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#" class="dropdown-item">item1</a></li>
+                    <li><a href="#" class="dropdown-item">item2</a></li>
+                    <li><a href="#" class="dropdown-item">item3</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link">conctact</a></li>
+        </ul>
+    </nav>
+</header>
